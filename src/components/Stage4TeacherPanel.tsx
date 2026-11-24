@@ -414,18 +414,26 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
       {/* Top Header Card */}
       <div className="bg-white rounded-2xl p-6 shadow-xs border border-slate-200">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <div className="flex items-center gap-2 mb-1">
-              <span className="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-md border border-blue-200">
-                Dashboard Panel Guru
-              </span>
-              <span className="text-xs font-semibold text-slate-500">
-                Kelas {CONFIG.KELAS} • {CONFIG.MATA_PELAJARAN}
-              </span>
+          <div className="flex items-center gap-3.5">
+            <img
+              src="/assets/aistudio/LOGO_fc9988a7.jpg"
+              alt={`Logo ${CONFIG.SEKOLAH}`}
+              referrerPolicy="no-referrer"
+              className="w-12 h-12 rounded-xl object-contain bg-white p-1 border border-slate-200 shadow-xs shrink-0"
+            />
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-md border border-blue-200">
+                  Dashboard Panel Guru
+                </span>
+                <span className="text-xs font-semibold text-slate-500">
+                  Kelas {CONFIG.KELAS} • {CONFIG.MATA_PELAJARAN}
+                </span>
+              </div>
+              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                Rekapitulasi &amp; Pengelolaan Tes Sumatif
+              </h2>
             </div>
-            <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-              Rekapitulasi &amp; Pengelolaan Tes Sumatif
-            </h2>
           </div>
 
           {/* Tombol Aksi Cepat Atas */}
@@ -783,7 +791,7 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
                 className="w-full px-3 py-2 text-xs rounded-xl border border-slate-300 bg-white focus:ring-2 focus:ring-blue-500 focus:outline-none font-medium"
               >
                 <option value="Semua">Semua Kelas</option>
-                <option value="VI">Kelas VI</option>
+                <option value={CONFIG.KELAS}>Kelas {CONFIG.KELAS}</option>
               </select>
             </div>
 
@@ -1182,7 +1190,7 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-100 gap-3">
             <div>
               <h3 className="text-base font-bold text-slate-900">
-                Struktur &amp; Bank Soal Matematika TKA ({questions.length} Butir)
+                Struktur &amp; Bank Soal {CONFIG.MATA_PELAJARAN} ({questions.length} Butir)
               </h3>
               <p className="text-xs text-slate-500">
                 18 Soal Pilihan Ganda, 3 Soal Pilihan Ganda Kompleks, 9 Soal PGK Kategori
@@ -1258,6 +1266,22 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
                     </button>
                   </div>
                 </div>
+
+                {q.imageUrl && (
+                  <div className="rounded-xl overflow-hidden border border-slate-200 bg-white p-2 max-w-md">
+                    <img
+                      src={q.imageUrl}
+                      alt={q.imageCaption || `Ilustrasi Soal ${q.id}`}
+                      referrerPolicy="no-referrer"
+                      className="w-full max-h-44 object-contain mx-auto rounded-lg"
+                    />
+                    {q.imageCaption && (
+                      <p className="mt-1.5 text-[11px] text-slate-500 italic text-center">
+                        {q.imageCaption}
+                      </p>
+                    )}
+                  </div>
+                )}
 
                 <p className="text-xs sm:text-sm text-slate-900 font-medium whitespace-pre-line">
                   {q.text}

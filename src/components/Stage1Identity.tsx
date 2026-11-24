@@ -98,11 +98,22 @@ export const Stage1Identity: React.FC<Stage1IdentityProps> = ({
     <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6">
       {/* Header Pengumuman Tes */}
       <div className="text-center mb-8">
+        <div className="inline-flex flex-col items-center mb-3">
+          <img
+            src="/assets/aistudio/LOGO_fc9988a7.jpg"
+            alt={`Logo ${CONFIG.SEKOLAH}`}
+            referrerPolicy="no-referrer"
+            className="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-2xl bg-white p-1.5 border border-slate-200 shadow-xs mb-2"
+          />
+          <span className="text-xs font-extrabold uppercase tracking-wider text-blue-800 bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+            {CONFIG.SEKOLAH}
+          </span>
+        </div>
         <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-          Tes Sumatif Matematika Kelas {CONFIG.KELAS}
+          Tes Sumatif {CONFIG.MATA_PELAJARAN} Kelas {CONFIG.KELAS}
         </h2>
-        <p className="mt-2 text-sm text-slate-600 max-w-xl mx-auto">
-          Materi Pokok: <span className="font-semibold text-slate-800">{CONFIG.MATERI}</span>.
+        <p className="mt-2 text-sm text-slate-700 max-w-xl mx-auto">
+          Materi Pokok: <span className="font-semibold text-slate-900">{CONFIG.MATERI}</span>.
           Silakan lengkapi identitas Anda dengan benar sebelum memulai pengerjaan soal.
         </p>
       </div>

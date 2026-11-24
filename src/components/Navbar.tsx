@@ -1,7 +1,7 @@
 import React from 'react';
 import { CONFIG } from '../config';
 import { AppStage } from '../types';
-import { GraduationCap, ShieldCheck, FileSpreadsheet, ArrowLeft } from 'lucide-react';
+import { ShieldCheck, ArrowLeft } from 'lucide-react';
 
 interface NavbarProps {
   currentStage: AppStage;
@@ -20,20 +20,23 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center justify-between h-16 sm:h-18">
           {/* Sisi Kiri: Identitas Sekolah & Judul */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-700 flex items-center justify-center text-white shadow-xs">
-              <GraduationCap className="w-6 h-6" />
-            </div>
+            <img
+              src="/assets/aistudio/LOGO_fc9988a7.jpg"
+              alt={`Logo ${CONFIG.SEKOLAH}`}
+              referrerPolicy="no-referrer"
+              className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl object-contain bg-white p-0.5 border border-slate-200 shadow-xs shrink-0"
+            />
             <div>
               <div className="flex items-center gap-2">
                 <span className="text-xs font-bold uppercase tracking-wider text-blue-800 bg-blue-50 px-2 py-0.5 rounded-md border border-blue-200">
-                  {CONFIG.KELAS} • {CONFIG.MATA_PELAJARAN}
+                  Kelas {CONFIG.KELAS} • {CONFIG.MATA_PELAJARAN}
                 </span>
                 <span className="hidden sm:inline-block text-xs font-medium text-slate-500">
                   Materi {CONFIG.MATERI}
                 </span>
               </div>
               <h1 id="navbar-app-title" className="text-sm sm:text-base font-bold text-slate-900 tracking-tight leading-tight">
-                Sekolah Dasar
+                {CONFIG.SEKOLAH}
               </h1>
             </div>
           </div>

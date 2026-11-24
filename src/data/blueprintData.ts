@@ -2,7 +2,7 @@ import { Question, QuestionBlueprint, CognitiveLevel, Difficulty } from '../type
 
 /**
  * Data Acuan Matriks Kisi-Kisi Penulisan Soal Tes Sumatif
- * Kurikulum Merdeka - Fase C (Kelas VI) Mata Pelajaran Matematika
+ * Kurikulum Merdeka - Fase C (Kelas 5) Mata Pelajaran IPAS
  */
 
 export interface BlueprintDefinition {
@@ -13,276 +13,276 @@ export interface BlueprintDefinition {
   bobotSkor: number;
 }
 
-// Peta acuan default 30 butir soal Kurikulum Merdeka
+// Peta acuan default 30 butir soal IPAS Kelas 5 Kurikulum Merdeka
 export const DEFAULT_BLUEPRINT_MAP: Record<number, BlueprintDefinition> = {
   1: {
-    elemen: 'Bilangan',
+    elemen: 'Letak Geografis Indonesia',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah operasi hitung bilangan bulat negatif dan positif dalam kehidupan sehari-hari.',
+      'Peserta didik dapat mengidentifikasi letak geografis Indonesia pada peta dunia sebagai negara yang berada di posisi silang.',
     indikatorSoal:
-      'Disajikan narasi perubahan suhu es yang dipanaskan secara berkala, peserta didik dapat menentukan suhu akhir es setelah waktu pemanasan tertentu.',
+      'Disajikan gambar peta kepulauan Indonesia, peserta didik dapat menentukan dua benua dan dua samudra yang mengapit wilayah Indonesia.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   2: {
-    elemen: 'Bilangan',
+    elemen: 'Letak Geografis Indonesia',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah penalaran yang melibatkan operasi hitung campuran pecahan dan bilangan cacah.',
+      'Peserta didik dapat menyebutkan batas-batas wilayah daratan dan perairan Indonesia dengan negara tetangga.',
     indikatorSoal:
-      'Disajikan cerita kontekstual panen beras (kuintal) yang dijual dan dibagi rata ke beberapa tetangga, peserta didik dapat menghitung berat beras yang diterima tiap orang dalam satuan kilogram.',
-    levelKognitif: 'L2',
+      'Disajikan narasi wilayah Pulau Kalimantan bagian utara, peserta didik dapat menentukan negara tetangga yang berbatasan langsung dengan daratan Indonesia.',
+    levelKognitif: 'L1',
     bobotSkor: 1,
   },
   3: {
-    elemen: 'Bilangan',
+    elemen: 'Letak Geografis Indonesia',
     tujuanPembelajaran:
-      'Peserta didik dapat mengaplikasikan konsep Faktor Persekutuan Terbesar (FPB) untuk menyelesaikan permasalahan pembagian barang secara merata.',
+      'Peserta didik dapat menganalisis karakteristik wilayah Indonesia sebagai negara maritim dan agraris.',
     indikatorSoal:
-      'Disajikan data tiga jenis perlengkapan belajar yang akan dibagikan sama banyak kepada siswa berprestasi, peserta didik dapat menentukan jumlah siswa terbanyak penerima dan jumlah pensil yang didapat masing-masing siswa.',
+      'Disajikan pernyataan tentang julukan Indonesia sebagai negara maritim, peserta didik dapat mengidentifikasi ciri utama negara maritim secara tepat.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   4: {
-    elemen: 'Bilangan',
+    elemen: 'Pengaruh Letak Geografis',
     tujuanPembelajaran:
-      'Peserta didik dapat menerapkan konsep Kelipatan Persekutuan Terkecil (KPK) dalam menentukan jadwal atau waktu kejadian bersamaan.',
+      'Peserta didik dapat menjelaskan pengaruh letak geografis dan garis khatulistiwa terhadap kondisi iklim tropis di Indonesia.',
     indikatorSoal:
-      'Disajikan interval waktu berbunyinya tiga lonceng pos kamling pada pukul tertentu, peserta didik dapat menentukan waktu saat ketiga lonceng berbunyi bersamaan kembali untuk kedua kalinya.',
+      'Disajikan informasi letak Indonesia di garis khatulistiwa (0°), peserta didik dapat menentukan ciri utama iklim tropis di Indonesia.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   5: {
-    elemen: 'Aljabar',
+    elemen: 'Pengaruh Letak Geografis',
     tujuanPembelajaran:
-      'Peserta didik dapat memahami konsep rasio, perbandingan, dan skala pada peta atau denah.',
+      'Peserta didik dapat menganalisis pengaruh angin muson terhadap pergantian musim hujan dan kemarau di Indonesia.',
     indikatorSoal:
-      'Disajikan jarak dua kota pada peta dan skala tertentu, peserta didik dapat menghitung jarak sebenarnya antara kedua kota tersebut dalam satuan kilometer.',
-    levelKognitif: 'L1',
+      'Disajikan deskripsi arah tiupan angin dari Benua Asia menuju Benua Australia pada bulan Oktober–April, peserta didik dapat menentukan jenis angin muson dan musim yang ditimbulkannya.',
+    levelKognitif: 'L2',
     bobotSkor: 1,
   },
   6: {
-    elemen: 'Aljabar',
+    elemen: 'Pengaruh Letak Geografis',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah proporsi dan perbandingan senilai yang berkaitan dengan selisih dan jumlah nilai.',
+      'Peserta didik dapat mengidentifikasi pembagian tiga zona waktu di Indonesia (WIB, WITA, WIT) beserta wilayah cakupannya.',
     indikatorSoal:
-      'Disajikan perbandingan umur dua orang dan selisih umur mereka, peserta didik dapat menghitung jumlah umur kedua orang tersebut seluruhnya.',
+      'Disajikan informasi pembagian zona waktu di Indonesia, peserta didik dapat menentukan zona waktu yang berlaku di Provinsi Bali (Jembrana) serta selisih waktunya terhadap WIB.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   7: {
-    elemen: 'Aljabar',
+    elemen: 'Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis permasalahan gerak lurus beraturan (kecepatan rata-rata, jarak, dan waktu) untuk kasus berpapasan.',
+      'Peserta didik dapat mengidentifikasi peran organisme sebagai produsen, konsumen, dan pengurai dalam rantai makanan.',
     indikatorSoal:
-      'Disajikan jarak dua kota, waktu keberangkatan yang sama, dan kecepatan dua kendaraan yang berpapasan, peserta didik dapat menganalisis dan menentukan pukul berapa kedua kendaraan saling berpapasan.',
-    levelKognitif: 'L3',
-    bobotSkor: 1,
-  },
-  8: {
-    elemen: 'Pengukuran',
-    tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah yang melibatkan hubungan antara volume bangun ruang, debit aliran zat cair, dan waktu pengisian.',
-    indikatorSoal:
-      'Disajikan ukuran bak penampungan air berbentuk balok dan debit kran air pengisi, peserta didik dapat menghitung waktu yang dibutuhkan untuk mengisi bak hingga penuh.',
-    levelKognitif: 'L2',
-    bobotSkor: 1,
-  },
-  9: {
-    elemen: 'Geometri',
-    tujuanPembelajaran:
-      'Peserta didik dapat menghitung keliling lingkaran dan mengaplikasikannya dalam pemecahan masalah lingkungan sekitar.',
-    indikatorSoal:
-      'Disajikan diameter sebuah taman berbentuk lingkaran yang akan dipasangi lampu penerangan dengan jarak tertentu, peserta didik dapat menentukan jumlah lampu yang dibutuhkan.',
+      'Disajikan gambar rantai makanan pada ekosistem sawah, peserta didik dapat menentukan makhluk hidup yang berperan sebagai produsen dan konsumen tingkat II.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
-  10: {
-    elemen: 'Geometri',
+  8: {
+    elemen: 'Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menghitung luas gabungan bangun datar (persegi panjang dan lingkaran).',
+      'Peserta didik dapat membedakan jenis-jenis simbiosis (mutualisme, komensalisme, parasitisme) antar makhluk hidup.',
     indikatorSoal:
-      'Disajikan gambar bangun datar gabungan antara persegi panjang dan setengah lingkaran berimpit, peserta didik dapat menghitung luas gabungan bangun tersebut.',
+      'Disajikan ilustrasi interaksi antara tanaman anggrek dan pohon mangga, peserta didik dapat menentukan jenis simbiosis yang terjadi.',
+    levelKognitif: 'L1',
+    bobotSkor: 1,
+  },
+  9: {
+    elemen: 'Ekosistem',
+    tujuanPembelajaran:
+      'Peserta didik dapat menjelaskan fungsi dekomposer (pengurai) dalam menjaga kesuburan tanah dan kelangsungan ekosistem.',
+    indikatorSoal:
+      'Disajikan narasi penguraian daun kering dan bangkai hewan oleh bakteri dan jamur, peserta didik dapat menentukan peran organisme tersebut dalam ekosistem.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
-  11: {
-    elemen: 'Pengukuran',
+  10: {
+    elemen: 'Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis dan menghitung volume bangun ruang tabung serta konversi volume ke satuan liter.',
+      'Peserta didik dapat menganalisis dampak perubahan populasi salah satu komponen terhadap keseimbangan ekosistem.',
     indikatorSoal:
-      'Disajikan dimensi drum penampung minyak berbentuk tabung yang telah terisi sebagian (pecahan), peserta didik dapat menganalisis sisa volume minyak yang dibutuhkan hingga penuh dalam satuan liter.',
+      'Disajikan gambar rantai makanan sawah dan skenario penurunan drastis populasi ular sawah, peserta didik dapat memprediksi dampak langsung terhadap populasi katak dan elang.',
     levelKognitif: 'L3',
     bobotSkor: 1,
   },
-  12: {
-    elemen: 'Geometri',
+  11: {
+    elemen: 'Bumi & Alam Semesta',
     tujuanPembelajaran:
-      'Peserta didik dapat menghitung luas permukaan bangun ruang kubus dalam konteks pemecahan masalah sehari-hari.',
+      'Peserta didik dapat mengidentifikasi urutan struktur lapisan bagian dalam Bumi dari lapisan terluar hingga terdalam.',
     indikatorSoal:
-      'Disajikan ukuran rusuk sebuah kotak kado berbentuk kubus, peserta didik dapat menentukan luas minimal kertas kado yang dibutuhkan untuk menutup seluruh permukaannya.',
+      'Disajikan gambar penampang struktur lapisan Bumi, peserta didik dapat mengurutkan lapisan penyusun Bumi dari kerak bumi hingga inti dalam.',
+    levelKognitif: 'L1',
+    bobotSkor: 1,
+  },
+  12: {
+    elemen: 'Bumi & Alam Semesta',
+    tujuanPembelajaran:
+      'Peserta didik dapat menjelaskan tahapan-tahapan siklus air (evaporasi, kondensasi, presipitasi, infiltrasi).',
+    indikatorSoal:
+      'Disajikan diagram proses siklus air di alam, peserta didik dapat mengidentifikasi proses penguapan air laut dan pembentukan awan secara berurutan.',
     levelKognitif: 'L1',
     bobotSkor: 1,
   },
   13: {
-    elemen: 'Analisis Data dan Peluang',
+    elemen: 'Bumi & Alam Semesta',
     tujuanPembelajaran:
-      'Peserta didik dapat menentukan nilai rata-rata (mean) dari sekumpulan data tunggal.',
+      'Peserta didik dapat menganalisis pengaruh aktivitas manusia terhadap kelancaran tahapan siklus air.',
     indikatorSoal:
-      'Disajikan sekumpulan data perolehan nilai ulangan harian siswa, peserta didik dapat menghitung nilai rata-rata (mean) dari data tersebut.',
-    levelKognitif: 'L1',
+      'Disajikan fenomena betonisasi dan pengaspalan jalan tanpa ruang terbuka hijau, peserta didik dapat menentukan tahapan siklus air yang terganggu (infiltrasi).',
+    levelKognitif: 'L2',
     bobotSkor: 1,
   },
   14: {
-    elemen: 'Analisis Data dan Peluang',
+    elemen: 'Bumi & Alam Semesta',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis data tunggal untuk menentukan nilai median (nilai tengah) dan modus.',
+      'Peserta didik dapat mengidentifikasi berbagai proses alami yang menyebabkan perubahan bentuk permukaan Bumi.',
     indikatorSoal:
-      'Disajikan data berat badan sejumlah siswa peserta cerdas cermat yang belum berurutan, peserta didik dapat menentukan nilai median dan modus secara tepat.',
+      'Disajikan kasus pengikisan daratan pantai akibat hantaman gelombang laut tanpa hutan mangrove, peserta didik dapat menamai peristiwa alam tersebut (abrasi).',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   15: {
-    elemen: 'Aljabar',
+    elemen: 'Bumi & Alam Semesta',
     tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan masalah aritmatika sosial yang berkaitan dengan persentase diskon (potongan harga).',
+      'Peserta didik dapat menganalisis jenis pergerakan lempeng tektonik Bumi dan kaitannya dengan gempa bumi serta gunung berapi.',
     indikatorSoal:
-      'Disajikan harga barang sebelum diskon dan persentase potongan harga belanja pendidikan, peserta didik dapat menghitung jumlah uang yang harus dibayar oleh pembeli.',
-    levelKognitif: 'L1',
+      'Disajikan narasi kondisi geologis Indonesia pada pertemuan lempeng bumi, peserta didik dapat menentukan istilah gerak dua lempeng yang saling bertumbukan (konvergen).',
+    levelKognitif: 'L3',
     bobotSkor: 1,
   },
   16: {
-    elemen: 'Analisis Data dan Peluang',
+    elemen: 'Budaya & Aktivitas Ekonomi',
     tujuanPembelajaran:
-      'Peserta didik dapat menyajikan dan menafsirkan data dalam bentuk diagram lingkaran.',
+      'Peserta didik dapat mengenal berbagai warisan budaya nasional Indonesia yang diakui secara internasional.',
     indikatorSoal:
-      'Disajikan diagram lingkaran persentase pilihan kegiatan ekstrakurikuler beserta jumlah total siswa, peserta didik dapat menghitung banyak siswa yang memilih ekstrakurikuler tertentu.',
-    levelKognitif: 'L2',
+      'Disajikan ilustrasi sawah terasering tradisional di Bali, peserta didik dapat mengidentifikasi nama sistem pengairan warisan budaya dunia UNESCO tersebut (Subak).',
+    levelKognitif: 'L1',
     bobotSkor: 1,
   },
   17: {
-    elemen: 'Bilangan',
+    elemen: 'Budaya & Aktivitas Ekonomi',
     tujuanPembelajaran:
-      'Peserta didik dapat menentukan akar pangkat tiga dari bilangan kubik yang berkaitan dengan volume kubus.',
+      'Peserta didik dapat menghubungkan kondisi geografis tempat tinggal dengan jenis aktivitas ekonomi masyarakat sekitar.',
     indikatorSoal:
-      'Disajikan volume bak penampungan air berbentuk kubus, peserta didik dapat menentukan panjang rusuk bagian dalam bak tersebut.',
-    levelKognitif: 'L2',
+      'Disajikan gambar aktivitas ekonomi dan kondisi wilayah pesisir pantai, peserta didik dapat menentukan mata pencaharian utama masyarakat pesisir.',
+    levelKognitif: 'L1',
     bobotSkor: 1,
   },
   18: {
-    elemen: 'Pengukuran',
+    elemen: 'Budaya & Aktivitas Ekonomi',
     tujuanPembelajaran:
-      'Peserta didik dapat mengonversi satuan kecepatan dari km/menit ke meter per detik (m/s).',
+      'Peserta didik dapat membedakan jenis kegiatan ekonomi (produksi, distribusi, konsumsi) di lingkungan sekitar.',
     indikatorSoal:
-      'Disajikan jarak tempuh dan waktu seorang pelari maraton cilik, peserta didik dapat menghitung dan mengonversi kecepatan rata-rata ke satuan meter/detik.',
+      'Disajikan narasi seorang perajin kain batik/tenun yang membuat karya kerajinan bernilai guna, peserta didik dapat mengklasifikasikan aktivitas tersebut sebagai kegiatan produksi.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   19: {
-    elemen: 'Geometri',
+    elemen: 'Letak Geografis Indonesia',
     tujuanPembelajaran:
-      'Peserta didik dapat mengidentifikasi dan membedakan sifat-sifat bangun datar layang-layang melalui pilihan berganda kompleks.',
+      'Peserta didik dapat mengevaluasi karakteristik letak geografis dan astronomis Indonesia melalui pilihan ganda kompleks.',
     indikatorSoal:
-      'Disajikan tiga deskripsi sifat geometris bangun datar layang-layang, peserta didik dapat memilih semua pernyataan yang benar (lebih dari satu jawaban benar).',
+      'Disajikan peta Indonesia dan 3 pernyataan terkait garis khatulistiwa, posisi silang, dan zona waktu, peserta didik dapat memilih semua pernyataan yang benar.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   20: {
-    elemen: 'Geometri',
+    elemen: 'Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis luas, keliling, dan estimasi nilai ekonomis lahan kebun berbentuk bangun datar.',
+      'Peserta didik dapat mengidentifikasi contoh-contoh simbiosis mutualisme pada lingkungan sekitar.',
     indikatorSoal:
-      'Disajikan ukuran kebun berbentuk persegi panjang dan harga jual per meter persegi, peserta didik dapat mengevaluasi dan memilih semua pernyataan yang bernilai benar.',
-    levelKognitif: 'L3',
-    bobotSkor: 1,
-  },
-  21: {
-    elemen: 'Bilangan',
-    tujuanPembelajaran:
-      'Peserta didik dapat menerapkan operasi hitung campuran bilangan desimal dan satuan berat dalam belanja sehari-hari.',
-    indikatorSoal:
-      'Disajikan data belanja kebutuhan pokok beras dan gula pasir, peserta didik dapat memverifikasi kebenaran hitungan berat tiap jenis barang dan total berat belanjaan.',
+      'Disajikan 3 contoh interaksi makhluk hidup di kebun/lingkungan sekitar, peserta didik dapat memilih semua pasangan makhluk hidup yang tergolong simbiosis mutualisme.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
-  22: {
-    elemen: 'Aljabar',
+  21: {
+    elemen: 'Bumi & Alam Semesta',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis konsep aritmatika sosial mengenai bruto, neto, tara, modal, harga jual, dan keuntungan.',
+      'Peserta didik dapat membedakan karakteristik lapisan penyusun Bumi (litosfer, hidrosfer, dan atmosfer).',
     indikatorSoal:
-      'Disajikan narasi pembelian buah dalam keranjang berkategori bruto dan tara, peserta didik dapat menentukan nilai kebenaran (Benar/Salah) pada 3 pernyataan terkait neto, modal, dan laba.',
+      'Disajikan gambar penampang Bumi dan 3 pernyataan tentang litosfer, hidrosfer, dan atmosfer, peserta didik dapat menentukan seluruh pernyataan yang benar.',
     levelKognitif: 'L3',
     bobotSkor: 1,
   },
-  23: {
-    elemen: 'Analisis Data dan Peluang',
+  22: {
+    elemen: 'Letak Geografis Indonesia',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis tabel distribusi frekuensi data tunggal dan menghubungkannya dengan kriteria ketercapaian (KKTP).',
+      'Peserta didik dapat memverifikasi batas-batas wilayah kepulauan Indonesia dengan samudra, benua, dan negara tetangga.',
     indikatorSoal:
-      'Disajikan data frekuensi nilai ulangan dan batas KKTP sekolah, peserta didik dapat menentukan nilai kebenaran (Benar/Salah) pada 3 pernyataan terkait modus, jumlah siswa tuntas, dan persentase remedial.',
+      'Disajikan 3 pernyataan mengenai batas selatan, batas timur Papua, dan letak Pulau Bali, peserta didik dapat menentukan kebenaran (Benar/Salah) masing-masing pernyataan.',
+    levelKognitif: 'L1',
+    bobotSkor: 1,
+  },
+  23: {
+    elemen: 'Letak Geografis Indonesia',
+    tujuanPembelajaran:
+      'Peserta didik dapat menganalisis keunikan kondisi geologis dan jalur pelayaran strategis Indonesia.',
+    indikatorSoal:
+      'Disajikan 3 pernyataan tentang jalur pegunungan muda dunia, Selat Malaka, dan keberadaan gunung api, peserta didik dapat menilai kebenaran (Benar/Salah) tiap pernyataan.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   24: {
-    elemen: 'Pengukuran',
+    elemen: 'Pengaruh Letak Geografis',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis volume balok dan kapasitas penampungan air dalam satuan liter.',
+      'Peserta didik dapat mengevaluasi dampak positif dan tantangan posisi silang Indonesia di bidang budaya serta perdagangan.',
     indikatorSoal:
-      'Disajikan dimensi bak penampungan air balok dan kondisi keterisian 3/4 kapasitas, peserta didik dapat menentukan kebenaran (Benar/Salah) untuk volume penuh, volume isi, dan volume air yang perlu ditambahkan.',
+      'Disajikan 3 pernyataan mengenai keragaman budaya, kegiatan ekspor-impor pelabuhan, dan penyaringan budaya asing, peserta didik dapat menentukan nilai Benar/Salah.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   25: {
-    elemen: 'Geometri',
+    elemen: 'Pengaruh Letak Geografis',
     tujuanPembelajaran:
-      'Peserta didik dapat menerapkan rumus keliling dan luas lingkaran pada objek kontekstual meja hias bundar.',
+      'Peserta didik dapat menganalisis pengaruh angin muson timur serta perbedaan waktu antar zona WIB, WITA, dan WIT.',
     indikatorSoal:
-      'Disajikan diameter meja bundar, peserta didik dapat mengevaluasi kebenaran (Benar/Salah) untuk panjang jari-jari, panjang renda hias keliling, dan luas permukaan kaca penutup.',
+      'Disajikan 3 pernyataan tentang angin muson timur, konversi waktu Jakarta–Bali, dan zona waktu Papua, peserta didik dapat menentukan nilai Benar/Salah.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   26: {
-    elemen: 'Aljabar',
+    elemen: 'Ekosistem',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis skala denah untuk menentukan ukuran panjang, lebar, dan luas sebenarnya.',
+      'Peserta didik dapat menganalisis peran produsen, simbiosis parasitisme, dan dampak penggunaan bahan kimia terhadap ekosistem.',
     indikatorSoal:
-      'Disajikan denah lapangan upacara sekolah dengan skala 1 : 400, peserta didik dapat menilai kebenaran (Benar/Salah) dari pernyataan panjang sebenarnya, lebar sebenarnya, dan luas sebenarnya.',
+      'Disajikan 3 pernyataan tentang fotosintesis tumbuhan, hubungan nyamuk-manusia, dan dampak pestisida berlebihan, peserta didik dapat menilai Benar/Salah tiap pernyataan.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
   27: {
-    elemen: 'Pengukuran',
+    elemen: 'Bumi & Alam Semesta',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis permasalahan jarak, waktu tempuh total, waktu istirahat, dan kecepatan gerak murni bus pariwisata.',
+      'Peserta didik dapat mengevaluasi proses transpirasi, presipitasi, serta pengaruh tutupan hutan terhadap siklus air.',
     indikatorSoal:
-      'Disajikan jadwal keberangkatan bus karya wisata, waktu tiba, jarak tempuh, dan durasi istirahat, peserta didik dapat memverifikasi nilai kebenaran (Benar/Salah) pada total waktu, waktu gerak murni, dan kecepatan rata-rata saat melaju.',
-    levelKognitif: 'L3',
-    bobotSkor: 1,
-  },
-  28: {
-    elemen: 'Bilangan',
-    tujuanPembelajaran:
-      'Peserta didik dapat menyelesaikan operasi persentase dan pecahan terhadap kuantitas barang persediaan awal.',
-    indikatorSoal:
-      'Disajikan persediaan awal buku tulis di koperasi dan data penjualan hari Senin (persen) dan Selasa (pecahan), peserta didik dapat menentukan kebenaran (Benar/Salah) dari 3 pernyataan penjualan dan sisa stok.',
-    levelKognitif: 'L1',
-    bobotSkor: 1,
-  },
-  29: {
-    elemen: 'Bilangan',
-    tujuanPembelajaran:
-      'Peserta didik dapat mengaplikasikan FPB dalam menentukan paket hadiah dan rincian isi barang per regu penerima.',
-    indikatorSoal:
-      'Disajikan jumlah tiga perlengkapan hadiah lomba kebersihan kelas, peserta didik dapat mengevaluasi kebenaran (Benar/Salah) nilai FPB, banyak regu terbanyak penerima, dan komposisi isi barang per regu.',
+      'Disajikan diagram siklus air dan 3 pernyataan terkait transpirasi, presipitasi, dan dampak penebangan hutan liar, peserta didik dapat menentukan nilai Benar/Salah.',
     levelKognitif: 'L2',
     bobotSkor: 1,
   },
-  30: {
-    elemen: 'Geometri',
+  28: {
+    elemen: 'Bumi & Alam Semesta',
     tujuanPembelajaran:
-      'Peserta didik dapat menganalisis koordinat Kartesius 4 titik untuk mengidentifikasi bentuk bangun datar, keliling, dan luas.',
+      'Peserta didik dapat menganalisis penyebab pergerakan lempeng tektonik, potensi tsunami, dan skala waktu perubahan permukaan Bumi.',
     indikatorSoal:
-      'Disajikan 4 titik koordinat bidang Kartesius yang saling dihubungkan, peserta didik dapat menganalisis dan menentukan kebenaran (Benar/Salah) dari jenis bangun datar yang terbentuk, keliling, dan luasnya.',
+      'Disajikan 3 pernyataan mengenai arus konveksi mantel, gempa tektonik pemicu tsunami, dan durasi proses erosi, peserta didik dapat menentukan nilai Benar/Salah.',
     levelKognitif: 'L3',
+    bobotSkor: 1,
+  },
+  29: {
+    elemen: 'Budaya & Aktivitas Ekonomi',
+    tujuanPembelajaran:
+      'Peserta didik dapat mengelompokkan warisan budaya benda dan warisan budaya tak benda serta upaya pelestariannya.',
+    indikatorSoal:
+      'Disajikan 3 pernyataan tentang contoh warisan budaya benda, budaya tak benda, dan peran generasi muda, peserta didik dapat menentukan nilai Benar/Salah.',
+    levelKognitif: 'L1',
+    bobotSkor: 1,
+  },
+  30: {
+    elemen: 'Budaya & Aktivitas Ekonomi',
+    tujuanPembelajaran:
+      'Peserta didik dapat menganalisis keterkaitan pelestarian warisan budaya lokal dengan pengembangan ekonomi kreatif dan agrowisata.',
+    indikatorSoal:
+      'Disajikan gambar budaya-ekonomi dan 3 pernyataan tentang UMKM batik/tenun, wisata sawah Subak, dan dukungan produk lokal, peserta didik dapat menilai Benar/Salah.',
+    levelKognitif: 'L2',
     bobotSkor: 1,
   },
 };
@@ -362,7 +362,7 @@ export function getQuestionBlueprint(q: Question, index: number): QuestionBluepr
     q.tujuanPembelajaran ||
     (def
       ? def.tujuanPembelajaran
-      : `Peserta didik mampu menerapkan konsep materi ${q.topic} dalam menyelesaikan permasalahan matematika.`);
+      : `Peserta didik mampu memahami dan menerapkan konsep materi ${q.topic} pada mata pelajaran IPAS.`);
 
   const indikatorSoal =
     q.indikatorSoal ||
@@ -390,22 +390,30 @@ export function getQuestionBlueprint(q: Question, index: number): QuestionBluepr
 
 function inferElemenFromTopic(topic: string): string {
   const t = topic.toLowerCase();
-  if (t.includes('bilangan') || t.includes('pecahan') || t.includes('fpb') || t.includes('kpk') || t.includes('pangkat')) {
-    return 'Bilangan';
+  if (t.includes('pengaruh') || t.includes('iklim') || t.includes('muson') || t.includes('waktu')) {
+    return 'Pengaruh Letak Geografis';
   }
-  if (t.includes('lingkaran') || t.includes('bangun datar') || t.includes('kubus') || t.includes('geometri') || t.includes('layang')) {
-    return 'Geometri';
+  if (t.includes('geografis') || t.includes('letak') || t.includes('batas') || t.includes('maritim')) {
+    return 'Letak Geografis Indonesia';
   }
-  if (t.includes('debit') || t.includes('volume') || t.includes('kecepatan') || t.includes('jarak')) {
-    return 'Pengukuran';
+  if (t.includes('ekosistem') || t.includes('rantai') || t.includes('simbiosis') || t.includes('makhluk')) {
+    return 'Ekosistem';
   }
-  if (t.includes('skala') || t.includes('perbandingan') || t.includes('diskon') || t.includes('bruto') || t.includes('aritmatika')) {
-    return 'Aljabar';
+  if (
+    t.includes('bumi') ||
+    t.includes('lapisan') ||
+    t.includes('litosfer') ||
+    t.includes('hidrosfer') ||
+    t.includes('atmosfer') ||
+    t.includes('siklus air') ||
+    t.includes('lempeng')
+  ) {
+    return 'Bumi & Alam Semesta';
   }
-  if (t.includes('statistika') || t.includes('diagram') || t.includes('mean') || t.includes('modus') || t.includes('median')) {
-    return 'Analisis Data dan Peluang';
+  if (t.includes('budaya') || t.includes('ekonomi') || t.includes('warisan')) {
+    return 'Budaya & Aktivitas Ekonomi';
   }
-  return 'Bilangan';
+  return 'IPAS Umum';
 }
 
 function inferLevelFromDifficulty(diff: Difficulty): CognitiveLevel {

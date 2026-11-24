@@ -715,6 +715,23 @@ export const Stage2Exam: React.FC<Stage2ExamProps> = ({
                 {currentQ.type === 'pgk_kategori' && 'Tentukan pilihan Benar atau Salah untuk setiap pernyataan di bawah ini.'}
               </div>
 
+              {/* Gambar Ilustrasi Soal (jika ada) */}
+              {currentQ.imageUrl && (
+                <figure className="mb-5 rounded-xl overflow-hidden border border-slate-200 bg-slate-50 p-2.5">
+                  <img
+                    src={currentQ.imageUrl}
+                    alt={currentQ.imageCaption || `Ilustrasi Soal No. ${currentIndex + 1}`}
+                    referrerPolicy="no-referrer"
+                    className="w-full max-h-72 object-contain mx-auto rounded-lg bg-white"
+                  />
+                  {currentQ.imageCaption && (
+                    <figcaption className="mt-2 text-[11px] sm:text-xs text-slate-600 italic text-center px-2">
+                      {currentQ.imageCaption}
+                    </figcaption>
+                  )}
+                </figure>
+              )}
+
               {/* Teks Soal */}
               <div className="text-sm sm:text-base text-slate-900 leading-relaxed font-medium whitespace-pre-line mb-6">
                 {currentQ.text}

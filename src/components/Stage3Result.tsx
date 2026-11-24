@@ -9,7 +9,6 @@ import {
   XCircle,
   Download,
   RotateCcw,
-  School,
   FileCheck,
   AlertTriangle,
   HelpCircle,
@@ -86,8 +85,13 @@ export const Stage3Result: React.FC<Stage3ResultProps> = ({
           </div>
         </div>
 
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-blue-800 mb-2 border border-blue-200">
-          <School className="w-3.5 h-3.5" />
+        <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-800 mb-2 border border-blue-200">
+          <img
+            src="/assets/aistudio/LOGO_fc9988a7.jpg"
+            alt={`Logo ${CONFIG.SEKOLAH}`}
+            referrerPolicy="no-referrer"
+            className="w-4 h-4 object-contain rounded-xs"
+          />
           {CONFIG.SEKOLAH}
         </span>
 
@@ -208,7 +212,7 @@ export const Stage3Result: React.FC<Stage3ResultProps> = ({
               Data Anda telah tersinkronisasi ke Google Spreadsheet sekolah.
             </p>
             <p className="mt-0.5 text-blue-800">
-              Anda dapat mengunduh lembar hasil tes resmi dalam bentuk PDF di bawah ini. Lembar ini memuat kolom tanda tangan resmi Guru Kelas VI ({CONFIG.GURU}) dan Orang Tua/Wali Murid.
+              Anda dapat mengunduh lembar hasil tes resmi dalam bentuk PDF di bawah ini. Lembar ini memuat kolom tanda tangan resmi Guru Kelas {CONFIG.KELAS} ({CONFIG.GURU}) dan Orang Tua/Wali Murid.
             </p>
           </div>
         </div>
@@ -261,6 +265,16 @@ export const Stage3Result: React.FC<Stage3ResultProps> = ({
                       Kunci: {Array.isArray(q.correctAnswer) ? q.correctAnswer.join(', ') : q.correctAnswer || 'Sesuai Kategori'}
                     </span>
                   </div>
+                  {q.imageUrl && (
+                    <div className="rounded-lg overflow-hidden border border-slate-200 bg-white p-1.5">
+                      <img
+                        src={q.imageUrl}
+                        alt={q.imageCaption || `Ilustrasi Soal ${idx + 1}`}
+                        referrerPolicy="no-referrer"
+                        className="w-full max-h-48 object-contain mx-auto rounded"
+                      />
+                    </div>
+                  )}
                   <p className="text-slate-800">{q.text}</p>
                   <div className="p-2.5 rounded bg-blue-50/70 border border-blue-100 text-slate-700">
                     <span className="font-bold text-blue-900 block mb-0.5">Pembahasan:</span>

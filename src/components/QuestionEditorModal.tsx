@@ -73,6 +73,8 @@ export const QuestionEditorModal: React.FC<QuestionEditorModalProps> = ({
       topic: topic.trim(),
       difficulty,
       explanation: explanation.trim(),
+      imageUrl: question.imageUrl,
+      imageCaption: question.imageCaption,
       options: question.type !== 'pgk_kategori' ? options : undefined,
       statements: question.type === 'pgk_kategori' ? statements : undefined,
       correctAnswer: question.type !== 'pgk_kategori' ? correctAnswer : undefined,
@@ -138,6 +140,20 @@ export const QuestionEditorModal: React.FC<QuestionEditorModalProps> = ({
               </select>
             </div>
           </div>
+
+          {question.imageUrl && (
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-2.5">
+              <span className="block text-[11px] font-bold text-slate-600 mb-1.5">
+                Gambar Ilustrasi Terpasang
+              </span>
+              <img
+                src={question.imageUrl}
+                alt={question.imageCaption || `Ilustrasi Soal ${question.id}`}
+                referrerPolicy="no-referrer"
+                className="w-full max-h-40 object-contain mx-auto rounded-lg bg-white"
+              />
+            </div>
+          )}
 
           {/* Teks Pertanyaan Soal */}
           <div>

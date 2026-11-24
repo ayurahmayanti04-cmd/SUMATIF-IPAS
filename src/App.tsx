@@ -1,7 +1,7 @@
 /**
  * Aplikasi Website Tes Sumatif
- * SEKOLAH DASAR - JEMBRANA - KELAS VI
- * Mata Pelajaran: MATEMATIKA (TKA)
+ * SD NEGERI 3 DANGINTUKADAYA - JEMBRANA - KELAS 5
+ * Mata Pelajaran: IPAS
  */
 
 import React, { useState, useEffect } from 'react';
@@ -14,8 +14,9 @@ import { Stage2Exam } from './components/Stage2Exam';
 import { Stage3Result } from './components/Stage3Result';
 import { Stage4TeacherPanel } from './components/Stage4TeacherPanel';
 import { TeacherAuthModal } from './components/TeacherAuthModal';
+import latarIpasImg from './assets/images/latar_ipas_nusantara_1795488790357.jpg';
 
-const STORAGE_QUESTIONS_KEY = 'sd3_loloan_timur_questions_v2';
+const STORAGE_QUESTIONS_KEY = 'sd3_dangintukadaya_ipas_questions_v1';
 const STORAGE_ALLOW_REVIEW_KEY = 'sd3_loloan_timur_allow_review';
 const STORAGE_STRICT_SECURITY_KEY = 'sd3_strict_exam_mode';
 
@@ -165,7 +166,18 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen flex flex-col relative isolate bg-gradient-to-br from-sky-50 via-emerald-50/60 to-teal-50 text-slate-900 selection:bg-blue-600 selection:text-white">
+      {/* Latar Belakang Tematik IPAS Nusantara */}
+      <div className="fixed inset-0 -z-10 pointer-events-none overflow-hidden" aria-hidden="true">
+        <img
+          src={latarIpasImg}
+          alt=""
+          referrerPolicy="no-referrer"
+          className="w-full h-full object-cover object-center opacity-85"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-sky-50/45 via-white/35 to-emerald-50/50 backdrop-blur-[1px]" />
+      </div>
+
       {/* Header Navigasi Atas */}
       <Navbar
         currentStage={currentStage}
@@ -219,7 +231,7 @@ export default function App() {
       </main>
 
       {/* Footer Resmi */}
-      <footer className="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
+      <footer className="bg-white/90 backdrop-blur-sm border-t border-slate-200/80 py-6 text-center text-xs text-slate-600">
         <div className="max-w-7xl mx-auto px-4 space-y-1.5">
           <p id="footer-developer-credit" className="font-semibold text-slate-700">
             Web Developer-susilo fitri yatmoko
